@@ -95,6 +95,7 @@ section h2 {
   color: #0033ff;
   margin-bottom: 20px;
 }
+
 .galeria-musica,
 .galeria-pasatiempos,
 .galeria-libros,
@@ -160,10 +161,7 @@ section h2 {
   background: linear-gradient(135deg, #ff5733, #28a745);
 }
 
-.boton-regresar:hover {
-  background: linear-gradient(135deg, #ff5733, #28a745);
-}
-
+/* Footer */
 footer {
   background-color: #0033ff;
   color: white;
@@ -173,4 +171,63 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  nav ul.menu {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  nav ul.menu li {
+    margin: 10px 0;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .galeria-musica,
+  .galeria-pasatiempos,
+  .galeria-libros,
+  .galeria-animales {
+    margin-left: 0;
+  }
+
+  .mosaico {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .boton-regresar {
+    margin-top: 20px;
+    margin-left: 0;
+    position: relative;
+    transform: none;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  .boton-regresar {
+    padding: 10px 25px;
+  }
+
+  .mosaico {
+    width: 100%;
+    margin: 10px 0;
+  }
 }

@@ -20,7 +20,6 @@ header {
   font-weight: bold;
 }
 
-/* Estilo del menú de navegación */
 nav ul.menu {
   list-style-type: none;
   display: flex;
@@ -58,12 +57,10 @@ nav ul.menu a:hover {
   transform: scale(1.05);
 }
 
-/* Sombra del menú */
 nav ul.menu li:hover {
   transform: scale(1.1);
 }
 
-/* Efecto de animación en los enlaces del menú */
 nav ul.menu li::after {
   content: "";
   position: absolute;
@@ -196,7 +193,6 @@ aside {
   background: #cc0000;
 }
 
-/* Botón de regresar al inicio */
 .boton-regresar {
   display: inline-block;
   margin-top: 30px;
@@ -214,7 +210,6 @@ aside {
   background: linear-gradient(135deg, #ff5733, #28a745);
 }
 
-/* Footer */
 footer {
   background-color: #0033ff;
   color: white;
@@ -224,4 +219,69 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  nav ul.menu {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  nav ul.menu li {
+    margin: 10px 0;
+  }
+
+  .contenedor {
+    max-width: 95%;
+    padding: 15px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .posts {
+    margin-right: 0;
+  }
+
+  aside {
+    margin-top: 20px;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+
+  header {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 1.1em;
+    padding: 15px;
+  }
+
+  .contenedor {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .option a {
+    padding: 10px 20px;
+  }
+
+  .posts article {
+    padding: 15px;
+  }
+
+  footer {
+    font-size: 0.7em;
+    padding: 10px;
+  }
+
+  .boton-regresar {
+    padding: 10px 25px;
+  }
 }
